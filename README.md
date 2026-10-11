@@ -49,9 +49,9 @@ Cada linguagem que domino é uma relíquia; cada projeto, uma área nova do mapa
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/pacman-contribution-graph.svg">
-  <img alt="Pac-Man comendo o gráfico de contribuições" src="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CauanDeveloper/MyDevAdventure/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CauanDeveloper/MyDevAdventure/output/pacman-contribution-graph.svg">
+  <img alt="Pac-Man comendo o gráfico de contribuições" src="https://raw.githubusercontent.com/CauanDeveloper/MyDevAdventure/output/pacman-contribution-graph.svg">
 </picture>
 </div>
 
