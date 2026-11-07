@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="./assets/banner.svg" width="100%" alt="Paisagem ao pôr do sol com montanhas e floresta: Olá, eu sou o Cauan, Engenheiro de Automações" />
+<img src="./assets/banner.svg" width="100%" alt="Noite de lua de sangue sobre montanhas e floresta: Olá, eu sou o Cauan, Engenheiro de Automações" />
 
-<a href="https://www.linkedin.com/in/cauan-augusto-99b466356"><img src="https://img.shields.io/badge/LinkedIn-Conectar-ec8a62?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1f1533" /></a>
-<img src="https://komarev.com/ghpvc/?username=CauanDeveloper&label=Visitas&color=b8546a&style=for-the-badge" />
+<a href="https://www.linkedin.com/in/cauan-augusto-99b466356"><img src="https://img.shields.io/badge/LinkedIn-Conectar-b3121b?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d0507" /></a>
+<img src="https://komarev.com/ghpvc/?username=CauanDeveloper&label=Visitas&color=b3121b&style=for-the-badge" />
 
 </div>
 
@@ -26,6 +26,10 @@ Sou **engenheiro de automações** e estudante de Ciência da Computação no Ce
 <img src="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/linguagens.svg" width="100%" alt="Linguagens mais usadas nos repositórios públicos" />
 
 </div>
+
+## Caça aos commits
+
+<img src="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/cobrinha.svg" width="100%" alt="Jogo da cobrinha: uma cobra vermelha percorre o gráfico de contribuições comendo os dias com commit" />
 
 ## Projetos em destaque
 

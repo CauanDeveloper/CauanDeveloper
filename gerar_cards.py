@@ -4,7 +4,7 @@ Uso: python gerar_cards.py assets
 Os ícones ficam em assets/icones (veja LICENCAS.txt).
 """
 import os, sys
-from estilo import FONT, CARD, TITLE, TEXT, MUTED, W, lucide, moldura, salvar, selo, simple_icon, titulo
+from estilo import FONT, CARD, TITLE, TEXT, MUTED, SANGUE, W, lucide, moldura, salvar, selo, simple_icon, titulo
 
 OUT = sys.argv[1]
 os.makedirs(OUT, exist_ok=True)
@@ -33,14 +33,14 @@ salvar(os.path.join(OUT, "o-que-eu-faco.svg"), W, 2 * CH + GAP, "O que eu faço"
 
 # ---- Tecnologias ------------------------------------------------------------
 TECNOLOGIAS = [
-    ("python", "Python", "#5a9fd4"),
-    ("javascript", "JavaScript", "#f7df1e"),
-    ("openjdk", "Java", "#f89820"),
-    ("html5", "HTML5", "#e34f26"),
-    ("css3", "CSS3", "#2965f1"),
-    ("git", "Git", "#f05032"),
-    ("githubactions", "Actions", "#2088ff"),
-    ("webhook", "APIs", "#ec8a62"),
+    ("python", "Python", SANGUE[4]),
+    ("javascript", "JavaScript", SANGUE[3]),
+    ("openjdk", "Java", SANGUE[4]),
+    ("html5", "HTML5", SANGUE[3]),
+    ("css3", "CSS3", SANGUE[4]),
+    ("git", "Git", SANGUE[3]),
+    ("githubactions", "Actions", SANGUE[4]),
+    ("webhook", "APIs", SANGUE[3]),
 ]
 TW, TH = 100, 128
 gap = (W - len(TECNOLOGIAS) * TW) / (len(TECNOLOGIAS) - 1)
@@ -56,7 +56,7 @@ for i, (icone, nome, cor) in enumerate(TECNOLOGIAS):
     else:
         desenho = f'<g transform="translate(30,26) scale(1.67)"><path d="{simple_icon(icone)}" fill="{cor}"/></g>'
     corpo.append(f'<g transform="translate({x:.1f},6)"><g class="tile" style="animation-delay:-{i * 0.35:.2f}s">'
-                 f'<rect x=".5" y=".5" width="{TW-1}" height="{TH-1}" rx="16" fill="{CARD}" stroke="url(#por-do-sol)" stroke-opacity=".7"/>'
+                 f'<rect x=".5" y=".5" width="{TW-1}" height="{TH-1}" rx="16" fill="{CARD}" stroke="url(#sangue)" stroke-opacity=".8"/>'
                  f'<circle class="brilho" cx="50" cy="46" r="40" fill="url(#brilho{i})"/>'
                  f'{desenho}'
                  f'<text x="50" y="106" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="600" fill="{TEXT}">{nome}</text>'
@@ -70,10 +70,10 @@ salvar(os.path.join(OUT, "tecnologias.svg"), W, TH + 12, "Tecnologias",
 PROJETOS = [
     ("projeto-computacao-visual.svg", "scan-eye", "computacao-visual",
      ["Experimentos de visão computacional", "rodando direto no navegador."],
-     ("JavaScript", "#f1e05a"), "Repositório público"),
+     ("JavaScript", SANGUE[4]), "Repositório público"),
     ("projeto-artista-moveis.svg", "armchair", "Artista Móveis Rústicos",
      ["Site institucional desenvolvido para", "a empresa Artista Móveis Rústicos."],
-     ("HTML", "#e34c26"), "Projeto para cliente"),
+     ("HTML", SANGUE[3]), "Projeto para cliente"),
 ]
 PW, PH = 432, 150
 for arquivo, icone, nome, linhas, (lang, cor), tipo in PROJETOS:
@@ -83,7 +83,7 @@ for arquivo, icone, nome, linhas, (lang, cor), tipo in PROJETOS:
                  f'stroke-linecap="round" stroke-linejoin="round">{lucide("lock" if privado else "arrow-up-right")}</g>')
     corpo += [f'<text x="86" y="{72 + k * 20}" font-family="{FONT}" font-size="13.5" fill="{MUTED}">{t}</text>'
               for k, t in enumerate(linhas)]
-    corpo.append(f'<line x1="22" y1="112" x2="{PW-22}" y2="112" stroke="#21262d"/>'
+    corpo.append(f'<line x1="22" y1="112" x2="{PW-22}" y2="112" stroke="#2a1216"/>'
                  f'<circle cx="28" cy="130" r="6" fill="{cor}"/>'
                  f'<text x="40" y="135" font-family="{FONT}" font-size="13" fill="{TEXT}">{lang}</text>'
                  f'<text x="{PW-22}" y="135" text-anchor="end" font-family="{FONT}" font-size="12" fill="{MUTED}">{tipo}</text>')
