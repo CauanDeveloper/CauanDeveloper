@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/metroidvania-hero.svg" width="100%" alt="Pixel art de um herói ruivo correndo por um castelo e coletando as relíquias Java, HTML, CSS e JavaScript" />
+<img src="./assets/metroidvania-hero.svg" width="100%" alt="Pixel art de uma personagem ruiva correndo por um castelo e coletando as relíquias Java, HTML, CSS e JavaScript" />
 
 ### ⚔️ Bem-vindo ao castelo, viajante.
 

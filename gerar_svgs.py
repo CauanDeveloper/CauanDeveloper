@@ -1,5 +1,5 @@
 """Gera os SVGs animados do perfil metroidvania."""
-import os, sys
+import base64, os, sys
 
 OUT = sys.argv[1]
 os.makedirs(OUT, exist_ok=True)
@@ -7,64 +7,6 @@ os.makedirs(OUT, exist_ok=True)
 W, H = 960, 300
 GROUND = 240
 T = 16  # duracao do ciclo (s)
-SCALE = 4
-
-PAL = {
-    "r": "#ff6a3d", "R": "#c8321e", "S": "#f5c39a", "E": "#1a1020",
-    "W": "#e8e0d0", "B": "#2e5aa8", "C": "#5b2a86", "Y": "#f2c14e",
-    "P": "#3a2d4f", "K": "#7a4524",
-}
-
-HEAD = [
-    "....rrrr....",
-    "..rrRRRRrr..",
-    ".rRRRRRRRRr.",
-    "rRRRRSSSSR..",
-    "RRRRSSSESS..",
-    ".RRRSSSSSS..",
-]
-FRAME_A = HEAD + [
-    "RR.RRSSSS...",
-    "R..WWWWWW...",
-    ".CCBBBBBBS..",
-    "CCCBBBBBBSS.",
-    "CC.BYYYYB...",
-    "C..BBBBBB...",
-    "...PPP.PPP..",
-    "..PPP...PPP.",
-    ".KKK.....KKK",
-    ".KK.......KK",
-]
-FRAME_B = HEAD + [
-    ".RR.RSSSS...",
-    "RR.WWWWWW...",
-    ".CCBBBBBBS..",
-    "CCCBBBBBBSS.",
-    "C..BYYYYB...",
-    "CC.BBBBBB...",
-    "...PPPPP....",
-    "....PPPP....",
-    "...KKK.KK...",
-    "...KKK......",
-]
-
-
-def sprite(rows, scale):
-    out = []
-    for y, row in enumerate(rows):
-        x = 0
-        while x < len(row):
-            c = row[x]
-            if c == ".":
-                x += 1
-                continue
-            run = 1
-            while x + run < len(row) and row[x + run] == c:
-                run += 1
-            out.append(f'<rect x="{x*scale}" y="{y*scale}" width="{run*scale}" height="{scale}" fill="{PAL[c]}"/>')
-            x += run
-    return "".join(out)
-
 
 # ---- reliquias -------------------------------------------------------------
 def relic_java():
@@ -99,9 +41,18 @@ RELICS = [
     ("JAVASCRIPT", 800, relic_js(), "#f7df1e"),
 ]
 
+# Personagem do portfolio (CauanDeveloper.github.io): sprite sheet 192 x 168,
+# grade 4 x 3 de quadros 48 x 56, pes na ancora (24, 54), arte virada para a direita.
+#   linha 0 = parada | linha 1 = caminhada (4 quadros) | linha 2 = subindo, caindo, aterrissando
+SHEET = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "personagem", "spritesheet.png")
+FW, FH = 48, 56
+FOOT = 2            # pixels transparentes abaixo dos pes
+CHAR_SCALE = 1.25
+RUN_FPS = 9
+
 START_X, END_X = -60, 1000
-SPRITE_W = 12 * SCALE
-SPRITE_H = 16 * SCALE
+SPRITE_W = FW * CHAR_SCALE
+SPRITE_H = (FH - FOOT) * CHAR_SCALE
 
 
 def pct(cx):
@@ -128,6 +79,12 @@ defs = f'''<defs>
   <rect x="-23" y="13" width="46" height="10" fill="#34254a"/>
   <rect x="25" y="13" width="46" height="10" fill="#34254a"/>
 </pattern>
+<filter id="contorno" x="-10%" y="-10%" width="120%" height="120%">
+  <feMorphology in="SourceAlpha" operator="dilate" radius="1" result="d"/>
+  <feFlood flood-color="#ffe6c2" flood-opacity=".6"/><feComposite in2="d" operator="in" result="o"/>
+  <feMerge><feMergeNode in="o"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<image id="sheet" width="192" height="168" style="image-rendering:pixelated" href="data:image/png;base64,{base64.b64encode(open(SHEET, "rb").read()).decode()}"/>
 ''' + "".join(
     f'<radialGradient id="g{i}"><stop offset="0" stop-color="{c}" stop-opacity=".7"/><stop offset="1" stop-color="{c}" stop-opacity="0"/></radialGradient>'
     for i, (_, _, _, c) in enumerate(RELICS)) + "</defs>"
@@ -218,9 +175,41 @@ css.append(f".hero{{animation:run {T}s linear infinite}}"
            f"@keyframes run{{from{{transform:translateX({START_X}px)}}to{{transform:translateX({END_X}px)}}}}"
            f".jump{{animation:jump {T}s linear infinite}}@keyframes jump{{{''.join(jump)}}}")
 
-body.append(f'<g class="hero"><ellipse cx="{SPRITE_W/2}" cy="{GROUND+1}" rx="18" ry="4" fill="#000" opacity=".35"/>'
-            f'<g class="jump"><g transform="translate(0,{GROUND-SPRITE_H})">'
-            f'<g class="fa">{sprite(FRAME_A, SCALE)}</g><g class="fb">{sprite(FRAME_B, SCALE)}</g>'
+
+def gate(name, windows, base):
+    """Liga (opacity 1) o grupo dentro das janelas [ini, fim) do ciclo; step-end deixa a troca seca."""
+    keys = [(0, base)]
+    for ini, fim in windows:
+        keys += [(ini, 1 - base), (fim, base)]
+    keys.append((100, base))
+    frames = "".join(f"{f(k)}%{{opacity:{v}}}" for k, v in keys)
+    css.append(f".{name}{{opacity:{base};animation:{name} {T}s step-end infinite}}@keyframes {name}{{{frames}}}")
+
+
+ps = [pct(cx) for (_, cx, _, _) in RELICS]
+LAND = 0.09 / T * 100
+gate("g-run", [(p - 4.2, p + 4.2 + LAND) for p in ps], 1)
+gate("g-up", [(p - 4.2, p) for p in ps], 0)
+gate("g-down", [(p, p + 4.2) for p in ps], 0)
+gate("g-land", [(p + 4.2, p + 4.2 + LAND) for p in ps], 0)
+
+# ciclo de caminhada: 4 quadros, cada um visivel 1/4 do ciclo
+cycle = 4 / RUN_FPS
+css.append(f"@keyframes rf{{0%{{opacity:1}}25%,100%{{opacity:0}}}}")
+for k in range(4):
+    css.append(f".r{k}{{opacity:{1 if k == 0 else 0};animation:rf {cycle:.3f}s step-end infinite;"
+               f"animation-delay:-{((4 - k) % 4) * cycle / 4:.3f}s}}")
+
+
+def frame(col, row):
+    return (f'<svg width="{FW}" height="{FH}" viewBox="{col*FW} {row*FH} {FW} {FH}" overflow="hidden">'
+            f'<use href="#sheet"/></svg>')
+
+
+body.append(f'<g class="hero"><ellipse cx="{SPRITE_W/2}" cy="{GROUND+1}" rx="16" ry="4" fill="#000" opacity=".35"/>'
+            f'<g class="jump"><g transform="translate(0,{GROUND-SPRITE_H}) scale({CHAR_SCALE})" filter="url(#contorno)">'
+            f'<g class="g-run">' + "".join(f'<g class="r{k}">{frame(k, 1)}</g>' for k in range(4)) + '</g>'
+            f'<g class="g-up">{frame(0, 2)}</g><g class="g-down">{frame(1, 2)}</g><g class="g-land">{frame(2, 2)}</g>'
             f'</g></g></g>')
 
 # ---- HUD ---------------------------------------------------------------------
@@ -233,8 +222,8 @@ body.append('<g class="hud">'
             '<text x="26" y="64" class="px" font-size="11" fill="#e8e0d0">MP</text>'
             '<rect x="48" y="57" width="200" height="6" fill="#10203a"/><rect class="mp" x="48" y="57" width="200" height="6" fill="#3d8bff"/>'
             '</g>')
-body.append('<rect x="690" y="12" width="256" height="58" fill="#0b0618" fill-opacity=".85" stroke="#f2c14e" stroke-width="2"/>'
-            '<text x="702" y="30" class="px" font-size="12" fill="#f2c14e">RELÍQUIAS</text>')
+body.append('<rect x="650" y="12" width="296" height="58" fill="#0b0618" fill-opacity=".85" stroke="#f2c14e" stroke-width="2"/>'
+            '<text x="662" y="45" class="px" font-size="12" fill="#f2c14e">RELÍQUIAS</text>')
 for i, (name, cx, svg, color) in enumerate(RELICS):
     sx = 760 + i * 46
     p = pct(cx)
@@ -256,8 +245,6 @@ css.insert(0, """
 .bob{animation:bob 1.6s ease-in-out infinite alternate}@keyframes bob{to{transform:translateY(-6px)}}
 .pulse{animation:glow .9s ease-in-out infinite alternate}
 .steam{animation:tw 1s steps(2) infinite}
-.fa{animation:fa .36s steps(1) infinite}@keyframes fa{50%{opacity:0}}
-.fb{opacity:0;animation:fb .36s steps(1) infinite}@keyframes fb{50%{opacity:1}}
 .mp{transform-box:fill-box;transform-origin:left;animation:mp 4s ease-in-out infinite alternate}@keyframes mp{to{transform:scaleX(.55)}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 """)
