@@ -1,0 +1,8 @@
+Ícones usados pelos cards do perfil (gerar_cards.py)
+
+python, javascript, openjdk, html5, css3, git, githubactions
+  Simple Icons v13.0.0 (https://simpleicons.org), licença CC0 1.0.
+  As marcas pertencem aos respectivos donos.
+
+workflow, plug-zap, brain-circuit, code-xml, webhook
+  Lucide v0.460.0 (https://lucide.dev), licença ISC.
