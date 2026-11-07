@@ -25,7 +25,7 @@ Sou **engenheiro de automações** e estudante de Ciência da Computação no Ce
 <img src="https://img.shields.io/badge/JavaScript-1f1533?style=for-the-badge&logo=javascript&logoColor=f7c07a" />
 <img src="https://img.shields.io/badge/Java-1f1533?style=for-the-badge&logo=openjdk&logoColor=f7c07a" />
 <img src="https://img.shields.io/badge/HTML5-1f1533?style=for-the-badge&logo=html5&logoColor=f7c07a" />
-<img src="https://img.shields.io/badge/CSS3-1f1533?style=for-the-badge&logo=css3&logoColor=f7c07a" />
+<img src="https://img.shields.io/badge/CSS3-1f1533?style=for-the-badge&logo=css&logoColor=f7c07a" />
 <img src="https://img.shields.io/badge/Git-1f1533?style=for-the-badge&logo=git&logoColor=f7c07a" />
 <img src="https://img.shields.io/badge/GitHub%20Actions-1f1533?style=for-the-badge&logo=githubactions&logoColor=f7c07a" />
 <img src="https://img.shields.io/badge/VS%20Code-1f1533?style=for-the-badge&logo=visualstudiocode&logoColor=f7c07a" />
@@ -36,8 +36,8 @@ Sou **engenheiro de automações** e estudante de Ciência da Computação no Ce
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=CauanDeveloper&show_icons=true&bg_color=0d1117&title_color=ec8a62&text_color=c9d1d9&icon_color=f7c07a&border_color=30363d&custom_title=Estatísticas%20no%20GitHub" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CauanDeveloper&layout=compact&bg_color=0d1117&title_color=ec8a62&text_color=c9d1d9&border_color=30363d&custom_title=Linguagens%20mais%20usadas" />
+<img width="49%" src="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/stats.svg" alt="Resumo no GitHub" />
+<img width="49%" src="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/linguagens.svg" alt="Linguagens mais usadas" />
 
 <img src="https://streak-stats.demolab.com?user=CauanDeveloper&background=0d1117&border=30363d&ring=ec8a62&fire=f7c07a&currStreakNum=c9d1d9&currStreakLabel=ec8a62&sideNums=c9d1d9&sideLabels=c9d1d9&dates=8b949e&locale=pt_BR" />
 
