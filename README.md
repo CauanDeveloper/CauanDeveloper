@@ -31,7 +31,6 @@ Sou **engenheiro de automações** e estudante de Ciência da Computação no Ce
 
 <div align="center">
 
-<a href="https://github.com/CauanDeveloper/CauanDeveloper.github.io"><img src="./assets/projeto-portfolio.svg" width="49%" alt="Portfólio interativo: portfólio em pixel art com uma personagem que apresenta os projetos" /></a>
 <a href="https://github.com/CauanDeveloper/computacao-visual"><img src="./assets/projeto-computacao-visual.svg" width="49%" alt="computacao-visual: experimentos de visão computacional no navegador" /></a>
 <img src="./assets/projeto-artista-moveis.svg" width="49%" alt="Artista Móveis Rústicos: site institucional para cliente" />
 

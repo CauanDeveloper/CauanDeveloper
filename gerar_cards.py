@@ -68,9 +68,6 @@ salvar(os.path.join(OUT, "tecnologias.svg"), W, TH + 12, "Tecnologias",
 
 # ---- Projetos em destaque (um SVG por projeto, para cada card ser um link) ---
 PROJETOS = [
-    ("projeto-portfolio.svg", "gamepad-2", "Portfólio interativo",
-     ["Portfólio em pixel art em que uma personagem", "percorre o cenário apresentando os projetos."],
-     ("JavaScript", "#f1e05a"), "Repositório público"),
     ("projeto-computacao-visual.svg", "scan-eye", "computacao-visual",
      ["Experimentos de visão computacional", "rodando direto no navegador."],
      ("JavaScript", "#f1e05a"), "Repositório público"),
