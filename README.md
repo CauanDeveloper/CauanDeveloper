@@ -1,76 +1,56 @@
 <div align="center">
 
-<img src="./assets/metroidvania-hero.svg" width="100%" alt="Pixel art de uma personagem ruiva correndo por um castelo e coletando as relíquias Java, HTML, CSS e JavaScript" />
+<img src="./assets/banner.svg" width="100%" alt="Paisagem ao pôr do sol com montanhas e floresta: Olá, eu sou o Cauan, Engenheiro de Automações" />
 
-### ⚔️ Bem-vindo ao castelo, viajante.
-
-Sou o **Cauan**, desenvolvedor **Front-End** explorando o castelo um salão de cada vez.  
-Cada linguagem que domino é uma relíquia; cada projeto, uma área nova do mapa.
-
-</div>
-
----
-
-## 🗺️ Mapa do castelo
-
-<div align="center">
-  <img src="./assets/castle-map.svg" width="100%" alt="Mapa estilo metroidvania com as salas HTML, CSS, JavaScript e Java exploradas" />
-</div>
-
-## 🎒 Inventário: relíquias equipadas
-
-<div align="center">
-
-<img src="https://img.shields.io/badge/Java-Catacumbas-f89820?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=1a1020" />
-<img src="https://img.shields.io/badge/HTML5-Átrio-e34f26?style=for-the-badge&logo=html5&logoColor=white&labelColor=1a1020" />
-<img src="https://img.shields.io/badge/CSS3-Galeria-1572b6?style=for-the-badge&logo=css3&logoColor=white&labelColor=1a1020" />
-<img src="https://img.shields.io/badge/JavaScript-Torre-f7df1e?style=for-the-badge&logo=javascript&logoColor=f7df1e&labelColor=1a1020" />
-
-**Equipamento secundário**
-
-<img src="https://img.shields.io/badge/Git-1a1020?style=for-the-badge&logo=git&logoColor=f05032" />
-<img src="https://img.shields.io/badge/GitHub-1a1020?style=for-the-badge&logo=github&logoColor=white" />
-<img src="https://img.shields.io/badge/VS%20Code-1a1020?style=for-the-badge&logo=visualstudiocode&logoColor=007acc" />
+<a href="https://www.linkedin.com/in/cauan-augusto-99b466356"><img src="https://img.shields.io/badge/LinkedIn-Cauan%20Augusto-1f1533?style=flat-square&logo=linkedin&logoColor=f7c07a" /></a>
+<a href="https://cauandeveloper.github.io"><img src="https://img.shields.io/badge/Portfólio-cauandeveloper.github.io-1f1533?style=flat-square&logo=githubpages&logoColor=f7c07a" /></a>
+<img src="https://komarev.com/ghpvc/?username=CauanDeveloper&label=Visitas&color=b8546a&style=flat-square" />
 
 </div>
 
-## 📜 Status do personagem
+## Sobre mim
+
+Sou **engenheiro de automações** e estudante de Ciência da Computação no Centro Universitário Univértix. Meu trabalho é encontrar tarefas manuais e repetitivas e transformá-las em fluxos automáticos e confiáveis: conecto sistemas, integro APIs e aplico inteligência artificial para que pessoas e empresas dediquem o tempo ao que realmente importa.
+
+- **Automação de processos:** mapeamento de rotinas e criação de fluxos que rodam sozinhos
+- **Integrações:** comunicação entre sistemas via APIs e webhooks
+- **Inteligência artificial:** agentes e fluxos com IA aplicados a problemas reais
+- **Desenvolvimento:** scripts e ferramentas em Python e JavaScript, e interfaces web para operar as automações
+
+## Tecnologias
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=CauanDeveloper&show_icons=true&bg_color=0d0718&title_color=ff6a3d&text_color=e8e0d0&icon_color=f2c14e&border_color=5b2a86&custom_title=Status%20do%20Cauan" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CauanDeveloper&layout=compact&bg_color=0d0718&title_color=ff6a3d&text_color=e8e0d0&border_color=5b2a86&custom_title=Relíquias%20mais%20usadas" />
-
-<img src="https://streak-stats.demolab.com?user=CauanDeveloper&background=0d0718&border=5b2a86&ring=ff6a3d&fire=ff6a3d&currStreakNum=e8e0d0&currStreakLabel=f2c14e&sideNums=e8e0d0&sideLabels=e8e0d0&dates=8a7fa8" />
+<img src="https://img.shields.io/badge/Python-1f1533?style=for-the-badge&logo=python&logoColor=f7c07a" />
+<img src="https://img.shields.io/badge/JavaScript-1f1533?style=for-the-badge&logo=javascript&logoColor=f7c07a" />
+<img src="https://img.shields.io/badge/Java-1f1533?style=for-the-badge&logo=openjdk&logoColor=f7c07a" />
+<img src="https://img.shields.io/badge/HTML5-1f1533?style=for-the-badge&logo=html5&logoColor=f7c07a" />
+<img src="https://img.shields.io/badge/CSS3-1f1533?style=for-the-badge&logo=css3&logoColor=f7c07a" />
+<img src="https://img.shields.io/badge/Git-1f1533?style=for-the-badge&logo=git&logoColor=f7c07a" />
+<img src="https://img.shields.io/badge/GitHub%20Actions-1f1533?style=for-the-badge&logo=githubactions&logoColor=f7c07a" />
+<img src="https://img.shields.io/badge/VS%20Code-1f1533?style=for-the-badge&logo=visualstudiocode&logoColor=f7c07a" />
 
 </div>
 
-## 👾 Fantasmas no calabouço de commits
+## Estatísticas
 
 <div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/pacman-contribution-graph.svg">
-  <img alt="Pac-Man comendo o gráfico de contribuições" src="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/pacman-contribution-graph.svg">
-</picture>
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=CauanDeveloper&show_icons=true&bg_color=0d1117&title_color=ec8a62&text_color=c9d1d9&icon_color=f7c07a&border_color=30363d&custom_title=Estatísticas%20no%20GitHub" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CauanDeveloper&layout=compact&bg_color=0d1117&title_color=ec8a62&text_color=c9d1d9&border_color=30363d&custom_title=Linguagens%20mais%20usadas" />
+
+<img src="https://streak-stats.demolab.com?user=CauanDeveloper&background=0d1117&border=30363d&ring=ec8a62&fire=f7c07a&currStreakNum=c9d1d9&currStreakLabel=ec8a62&sideNums=c9d1d9&sideLabels=c9d1d9&dates=8b949e&locale=pt_BR" />
+
 </div>
 
-## 🏰 Áreas exploradas
+## Projetos em destaque
 
-| Área | Missão |
+| Projeto | Descrição |
 | --- | --- |
-| 🪑 **Artista Móveis Rústicos** | Site institucional para a empresa Artista Móveis Rústicos (HTML · CSS) |
-| 👁️ [**computacao-visual**](https://github.com/CauanDeveloper/computacao-visual) | Experimentos de visão computacional com JavaScript |
-| ⚙️ [**Repositorio-Devops**](https://github.com/CauanDeveloper/Repositorio-Devops) | Estudos e práticas de DevOps |
+| [**Portfólio interativo**](https://github.com/CauanDeveloper/CauanDeveloper.github.io) | Portfólio em pixel art, com uma personagem que percorre o cenário apresentando meus projetos ([ver online](https://cauandeveloper.github.io)) |
+| [**computacao-visual**](https://github.com/CauanDeveloper/computacao-visual) | Experimentos de visão computacional com JavaScript |
+| **Artista Móveis Rústicos** | Site institucional desenvolvido para a empresa Artista Móveis Rústicos |
 
-## 🕯️ Save room
+## Contato
 
-<div align="center">
-
-Precisa de um aliado na próxima dungeon? Me chama:
-
-<a href="https://www.linkedin.com/in/cauan-augusto-99b466356"><img src="https://img.shields.io/badge/LinkedIn-Cauan%20Augusto-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1a1020" /></a>
-
-<sub>🦇 "What is a developer? A miserable little pile of commits." 🦇</sub>
-
-</div>
+Aberto a projetos de automação, integrações e desenvolvimento. O melhor canal é o [LinkedIn](https://www.linkedin.com/in/cauan-augusto-99b466356).
