@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.svg" width="100%" alt="Noite de lua de sangue sobre montanhas e floresta: Olá, eu sou o Cauan, Engenheiro de Automações" />
+<img src="./assets/banner.svg" width="100%" alt="Noite de lua de sangue sobre montanhas e floresta em movimento: Olá, eu sou o Cauan, Engenheiro de Automações e Cientista da Computação" />
 
 <a href="https://www.linkedin.com/in/cauan-augusto-99b466356"><img src="https://img.shields.io/badge/LinkedIn-Conectar-b3121b?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d0507" /></a>
 <img src="https://komarev.com/ghpvc/?username=CauanDeveloper&label=Visitas&color=b3121b&style=for-the-badge" />
