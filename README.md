@@ -17,24 +17,25 @@ Sou **engenheiro de automações** e estudante de Ciência da Computação no Ce
 
 <img src="./assets/tecnologias.svg" width="100%" alt="Tecnologias: Python, JavaScript, Java, HTML5, CSS3, Git, GitHub Actions e APIs" />
 
-## Estatísticas
+## Atividade no GitHub
 
 <div align="center">
 
-<img width="49%" src="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/stats.svg" alt="Resumo no GitHub" />
-<img width="49%" src="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/linguagens.svg" alt="Linguagens mais usadas" />
-
-<img src="https://streak-stats.demolab.com?user=CauanDeveloper&background=0d1117&border=30363d&ring=ec8a62&fire=f7c07a&currStreakNum=c9d1d9&currStreakLabel=ec8a62&sideNums=c9d1d9&sideLabels=c9d1d9&dates=8b949e&locale=pt_BR" />
+<img src="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/indicadores.svg" width="100%" alt="Indicadores: contribuições no ano, commits públicos, repositórios públicos, sequência atual e maior sequência" />
+<img src="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/atividade.svg" width="100%" alt="Mapa de contribuições do último ano" />
+<img src="https://raw.githubusercontent.com/CauanDeveloper/CauanDeveloper/output/linguagens.svg" width="100%" alt="Linguagens mais usadas nos repositórios públicos" />
 
 </div>
 
 ## Projetos em destaque
 
-| Projeto | Descrição |
-| --- | --- |
-| [**Portfólio interativo**](https://github.com/CauanDeveloper/CauanDeveloper.github.io) | Portfólio em pixel art, com uma personagem que percorre o cenário apresentando meus projetos |
-| [**computacao-visual**](https://github.com/CauanDeveloper/computacao-visual) | Experimentos de visão computacional com JavaScript |
-| **Artista Móveis Rústicos** | Site institucional desenvolvido para a empresa Artista Móveis Rústicos |
+<div align="center">
+
+<a href="https://github.com/CauanDeveloper/CauanDeveloper.github.io"><img src="./assets/projeto-portfolio.svg" width="49%" alt="Portfólio interativo: portfólio em pixel art com uma personagem que apresenta os projetos" /></a>
+<a href="https://github.com/CauanDeveloper/computacao-visual"><img src="./assets/projeto-computacao-visual.svg" width="49%" alt="computacao-visual: experimentos de visão computacional no navegador" /></a>
+<img src="./assets/projeto-artista-moveis.svg" width="49%" alt="Artista Móveis Rústicos: site institucional para cliente" />
+
+</div>
 
 ## Contato
 
