@@ -194,7 +194,7 @@ b.append(f'<rect class="cursor" y="158" width="3" height="28" fill="#ff4d4d">'
          f'values="{";".join(f"{x + 2:.1f}" for x in cursor_x)}"/></rect>')
 b.append('</g>')
 b.append(f'<g class="flutua3"><text x="{CX}" y="216" text-anchor="middle" font-family="{FONT}" font-size="17" fill="#e0cfd1" '
-         f'letter-spacing="2" filter="url(#sombra)">FRONT-END  ·  BACK-END  ·  AUTOMAÇÕES COM IA</text>'
+         f'letter-spacing="2" filter="url(#sombra)">PROCESSOS  ·  INTEGRAÇÕES  ·  INTELIGÊNCIA ARTIFICIAL</text>'
          f'<rect class="risco" x="{CX-120}" y="230" width="240" height="2" rx="1" fill="#ff4d4d"/></g>')
 
 css = f"""
