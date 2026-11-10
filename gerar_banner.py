@@ -7,13 +7,14 @@ apagando, entre as frases de FRASES.
 Uso: python gerar_banner.py assets
 """
 import os, random, sys
+from html import escape
 
 OUT = sys.argv[1]
 os.makedirs(OUT, exist_ok=True)
 
 W, H = 1200, 400
 random.seed(42)
-FRASES = ["Engenheiro de Automações", "Cientista da Computação"]
+FRASES = ["Desenvolvedor Full-Stack", "IA & Automações", "Automation Developer", "Criação de Sites"]
 
 
 def ridge_tile(y, rough, depth=7):
@@ -163,7 +164,7 @@ b.append(f'<g class="flutua">'
 # máquina de escrever (SMIL): a largura do recorte cresce letra a letra
 FS = 26
 CW = FS * 0.6  # largura de um caractere em fonte monoespaçada
-CICLO = 12.0
+CICLO = 20.0
 JANELA = CICLO / len(FRASES)
 DIGITA, APAGA = 0.075, 0.035
 larguras, cursor_x, tempos = [], [], []
@@ -187,13 +188,13 @@ for i, frase in enumerate(FRASES):
     b.append(f'<clipPath id="digita{i}"><rect x="{esq:.1f}" y="150" height="44" width="0">'
              f'<animate attributeName="width" dur="{CICLO}s" repeatCount="indefinite" calcMode="discrete" keyTimes="{kt}" values="{vals}"/></rect></clipPath>'
              f'<g clip-path="url(#digita{i})"><text x="{esq:.1f}" y="180" font-family="{MONO}" font-size="{FS}" font-weight="700" fill="#ff4d4d" '
-             f'filter="url(#sombra)">{frase}</text></g>')
+             f'filter="url(#sombra)">{escape(frase)}</text></g>')
 b.append(f'<rect class="cursor" y="158" width="3" height="28" fill="#ff4d4d">'
          f'<animate attributeName="x" dur="{CICLO}s" repeatCount="indefinite" calcMode="discrete" keyTimes="{kt}" '
          f'values="{";".join(f"{x + 2:.1f}" for x in cursor_x)}"/></rect>')
 b.append('</g>')
 b.append(f'<g class="flutua3"><text x="{CX}" y="216" text-anchor="middle" font-family="{FONT}" font-size="17" fill="#e0cfd1" '
-         f'letter-spacing="2" filter="url(#sombra)">PROCESSOS  ·  INTEGRAÇÕES  ·  INTELIGÊNCIA ARTIFICIAL</text>'
+         f'letter-spacing="2" filter="url(#sombra)">FRONT-END  ·  BACK-END  ·  AUTOMAÇÕES COM IA</text>'
          f'<rect class="risco" x="{CX-120}" y="230" width="240" height="2" rx="1" fill="#ff4d4d"/></g>')
 
 css = f"""
@@ -223,7 +224,7 @@ css = f"""
 """
 
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">'
-       f'<title>Cauan Augusto - Engenheiro de Automações e Cientista da Computação</title><style>{css}</style>{"".join(b)}</svg>')
+       f'<title>Cauan Augusto - Desenvolvedor Full-Stack, IA e Automações</title><style>{css}</style>{"".join(b)}</svg>')
 with open(os.path.join(OUT, "banner.svg"), "w", encoding="utf-8") as fh:
     fh.write(svg)
 print("ok")

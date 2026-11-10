@@ -17,8 +17,8 @@ SERVICOS = [
      ["Conecto sistemas que não conversam", "entre si usando APIs, webhooks e", "troca de dados automatizada."]),
     ("brain-circuit", "Inteligência artificial",
      ["Agentes e fluxos com IA que leem,", "classificam e respondem, aplicados", "a problemas reais do dia a dia."]),
-    ("code-xml", "Desenvolvimento",
-     ["Scripts e ferramentas em Python e", "JavaScript, e interfaces web para", "acompanhar e operar as automações."]),
+    ("code-xml", "Desenvolvimento full-stack",
+     ["Sites e sistemas web completos, do", "front-end ao back-end, com Python e", "JavaScript, prontos para automação."]),
 ]
 CW, CH, GAP = 432, 142, 16
 corpo = []
