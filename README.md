@@ -8,7 +8,7 @@
 
 ## Sobre mim
 
-Sou **AI Automation Developer** e **desenvolvedor front-end**, estudante de Ciência da Computação no Centro Universitário Univértix. Desenvolvo soluções com inteligência artificial, crio interfaces web e transformo tarefas manuais e repetitivas em fluxos automáticos e confiáveis: conecto sistemas, integro APIs e aplico inteligência artificial para que pessoas e empresas dediquem o tempo ao que realmente importa.
+Sou **AI Automation Developer** e **desenvolvedor front-end**, estudante de Ciência da Computação no Centro Universitário Univértix. Desenvolvo soluções com inteligência artificial, crio interfaces web e transformo tarefas manuais e repetitivas em fluxos automáticos e confiáveis: conecto sistemas e integro APIs para que pessoas e empresas dediquem o tempo ao que realmente importa.
 
 <img src="./assets/o-que-eu-faco.svg" width="100%" alt="O que eu faço: automação de processos, integrações via APIs e webhooks, inteligência artificial aplicada e desenvolvimento em Python e JavaScript" />
 
