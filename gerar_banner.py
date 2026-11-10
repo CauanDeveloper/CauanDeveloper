@@ -14,7 +14,7 @@ os.makedirs(OUT, exist_ok=True)
 
 W, H = 1200, 400
 random.seed(42)
-FRASES = ["Desenvolvedor Full-Stack", "IA & Automações", "Automation Developer", "Criação de Sites"]
+FRASES = ["AI Automation Developer", "Desenvolvedor Front-End", "AI Solutions Developer"]
 
 
 def ridge_tile(y, rough, depth=7):
@@ -164,7 +164,7 @@ b.append(f'<g class="flutua">'
 # máquina de escrever (SMIL): a largura do recorte cresce letra a letra
 FS = 26
 CW = FS * 0.6  # largura de um caractere em fonte monoespaçada
-CICLO = 20.0
+CICLO = 16.5
 JANELA = CICLO / len(FRASES)
 DIGITA, APAGA = 0.075, 0.035
 larguras, cursor_x, tempos = [], [], []
@@ -224,7 +224,7 @@ css = f"""
 """
 
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">'
-       f'<title>Cauan Augusto - Desenvolvedor Full-Stack, IA e Automações</title><style>{css}</style>{"".join(b)}</svg>')
+       f'<title>Cauan Augusto - AI Automation Developer, Desenvolvedor Front-End e AI Solutions Developer</title><style>{css}</style>{"".join(b)}</svg>')
 with open(os.path.join(OUT, "banner.svg"), "w", encoding="utf-8") as fh:
     fh.write(svg)
 print("ok")

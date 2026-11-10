@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.svg" width="100%" alt="Noite de lua de sangue sobre montanhas e floresta em movimento: Olá, eu sou o Cauan: Desenvolvedor Full-Stack, IA e Automações, Automation Developer e Criação de Sites" />
+<img src="./assets/banner.svg" width="100%" alt="Noite de lua de sangue sobre montanhas e floresta em movimento: Olá, eu sou o Cauan: AI Automation Developer, Desenvolvedor Front-End e AI Solutions Developer" />
 
 <a href="https://www.linkedin.com/in/cauan-augusto-99b466356"><img src="https://img.shields.io/badge/LinkedIn-Conectar-b3121b?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d0507" /></a>
 
@@ -8,7 +8,7 @@
 
 ## Sobre mim
 
-Sou **desenvolvedor full-stack** com foco em **IA e automações** (automation developer) e estudante de Ciência da Computação no Centro Universitário Univértix. Crio sites e sistemas web do front-end ao back-end, e transformo tarefas manuais e repetitivas em fluxos automáticos e confiáveis: conecto sistemas, integro APIs e aplico inteligência artificial para que pessoas e empresas dediquem o tempo ao que realmente importa.
+Sou **AI Automation Developer** e **desenvolvedor front-end**, estudante de Ciência da Computação no Centro Universitário Univértix. Desenvolvo soluções com inteligência artificial, crio interfaces web e transformo tarefas manuais e repetitivas em fluxos automáticos e confiáveis: conecto sistemas, integro APIs e aplico inteligência artificial para que pessoas e empresas dediquem o tempo ao que realmente importa.
 
 <img src="./assets/o-que-eu-faco.svg" width="100%" alt="O que eu faço: automação de processos, integrações via APIs e webhooks, inteligência artificial aplicada e desenvolvimento em Python e JavaScript" />
 
